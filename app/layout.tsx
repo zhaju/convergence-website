@@ -10,7 +10,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Convergence - Real-World Social Game",
+  title: "Convergence",
   description: "Life changing events for life changing people",
   generator: "v0.app",
 }
