@@ -117,7 +117,7 @@ export default function ConvergencePage() {
             <div className={`flex items-center gap-3 p-4 ${isDarkMode ? "bg-white/10" : "bg-gray-50"} rounded-lg`}>
               <span className="text-2xl">🏃‍♂️</span>
               <div className="text-left">
-                <h3 className={`font-semibold ${isDarkMode ? "text-white" : "text-gray-900"}`}>Run around cities</h3>
+                <h3 className={`font-semibold ${isDarkMode ? "text-white" : "text-gray-900"}`}>Run around</h3>
                 <p className={`text-sm ${isDarkMode ? "text-gray-300" : "text-gray-600"}`}>
                   Real locations, silly challenges
                 </p>
