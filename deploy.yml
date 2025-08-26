@@ -2,7 +2,7 @@ name: Deploy Next.js static site to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main" ]   # deploy whenever you push to main
 
 jobs:
   build-and-deploy:
@@ -18,11 +18,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Next.js site
+      - name: Build Next.js site (with static export)
         run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /convergence-website
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
+          # The site will go to the gh-pages branch automatically
