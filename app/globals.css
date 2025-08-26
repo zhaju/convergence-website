@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "tw-animate-css";
+/* Removed tw-animate-css import that was causing deployment issues */
 
 /* Updated theme to use Inter font and white background */
 @theme inline {
