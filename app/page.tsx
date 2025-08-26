@@ -17,7 +17,7 @@ export default function ConvergencePage() {
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-4">
         <div className="flex items-center gap-3">
-          <Image src="/convergence-logo.png" alt="Convergence Logo" width={40} height={40} className="rounded" />
+          <Image src="/convergence-website/convergence-logo.png" alt="Convergence Logo" width={40} height={40} className="rounded" />
           <span className={`text-xl font-semibold ${isDarkMode ? "text-white" : "text-gray-900"}`}>Convergence</span>
         </div>
         <nav className="flex items-center gap-6">
